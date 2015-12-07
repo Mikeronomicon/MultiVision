@@ -15,9 +15,13 @@ app.set('views', __dirname + 'server/views');
 app.set('view engine', 'jade');
 app.use(stylus.middleware({
   src: __dirname + '/public',
-  compile: compile;
+  compile: compile
 }));
 app.use(express.static(__dirname + 'public'));
+
+app.get('partials/:partialsPath', function(req, res) {
+  res.render('partials/' + req.params.partialPath);
+})
 
 app.get('*', function(req, res) {
   res.render('index');
