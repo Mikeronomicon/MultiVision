@@ -1,0 +1,23 @@
+{
+  "name": "multivision",
+  "version": "0.0.0",
+  "description": "\"streaming site template\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Mikeronomicon/MultiVision.git"
+  },
+  "author": "Michael Lorenzo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikeronomicon/MultiVision/issues"
+  },
+  "homepage": "https://github.com/Mikeronomicon/MultiVision#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}
