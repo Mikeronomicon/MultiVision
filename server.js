@@ -42,9 +42,9 @@ var messageSchema = mongoose.Schema({
 var Message = mongoose.model('Message', messageSchema);
 var mongoMessage;
 
-Message.findOne().exec(function(err, messageDoc) {
-  mongoMessage = messageDoc.message;
-});
+// Message.findOne().exec(function(err, messageDoc) {
+//   mongoMessage = messageDoc.message;
+// });
 
 app.get('/partials/:partialPath', function(req, res) {
   res.render('partials/' + req.params.partialPath);
